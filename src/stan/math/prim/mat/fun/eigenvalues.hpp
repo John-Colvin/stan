@@ -22,12 +22,9 @@ namespace stan {
 
       EigenvalueType evs = solver.eigenvalues();
 
-      typename EigenvalueType::RealReturnType evsR = evs.real();
-      typename EigenvalueType::ImagReturnType evsI = evs.imag();
-
-      Eigen::Matrix<T, Eigen::Dynamic, 1> evsRI;
-      evsRI << evsR, evsI;
-
+      Eigen::Matrix<T, Eigen::Dynamic, 1> evsRI(evs.size() * 2);
+      evsRI << evs.real(), evs.imag();
+      
       return evsRI;
     }
 
