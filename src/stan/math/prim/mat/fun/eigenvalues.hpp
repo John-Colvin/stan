@@ -18,12 +18,12 @@ namespace stan {
           EigenSolverInst;
       EigenSolverInst solver(m, Eigen::EigenvaluesOnly);
       
-      typedef EigenSolverInst::EigenvalueType EigenvalueType;
+      typedef typename EigenSolverInst::EigenvalueType EigenvalueType;
 
       EigenvalueType evs = solver.eigenvalues();
 
-      EigenvalueType::RealReturnType evsR = evs.real();
-      EigenvalueType::ImagReturnType evsI = evs.imag();
+      typename EigenvalueType::RealReturnType evsR = evs.real();
+      typename EigenvalueType::ImagReturnType evsI = evs.imag();
 
       Eigen::Matrix<T, Eigen::Dynamic, 1> evsRI;
       evsRI << evsR, evsI;
