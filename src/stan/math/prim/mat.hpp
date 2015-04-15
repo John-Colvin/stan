@@ -74,6 +74,7 @@
 #include <stan/math/prim/mat/fun/dot_self.hpp>
 #include <stan/math/prim/mat/fun/eigenvalues_sym.hpp>
 #include <stan/math/prim/mat/fun/eigenvectors_sym.hpp>
+#include <stan/math/prim/mat/fun/eigenvalues.hpp>
 #include <stan/math/prim/mat/fun/elt_divide.hpp>
 #include <stan/math/prim/mat/fun/elt_multiply.hpp>
 #include <stan/math/prim/mat/fun/exp.hpp>
