@@ -18,6 +18,8 @@ namespace stan {
           EigenSolverInst;
       EigenSolverInst solver(m, Eigen::EigenvaluesOnly);
       
+      typedef EigenSolverInst::EigenvalueType EigenvalueType;
+
       EigenvalueType evs = solver.eigenvalues();
 
       EigenvalueType::RealReturnType evsR = evs.real();
