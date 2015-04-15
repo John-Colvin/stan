@@ -228,6 +228,7 @@ add_binary("double_exponential_rng");
 add_nullary("e");
 add("eigenvalues_sym",VECTOR_T,MATRIX_T);
 add("eigenvectors_sym",MATRIX_T,MATRIX_T);
+add("eigenvalues",VECTOR_T,MATRIX_T);
 add("qr_Q",MATRIX_T,MATRIX_T);
 add("qr_R",MATRIX_T,MATRIX_T);
 add("elt_divide",VECTOR_T,VECTOR_T,VECTOR_T);
